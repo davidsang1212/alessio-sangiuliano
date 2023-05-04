@@ -62,7 +62,7 @@
       }
   
       h2  { font-size: 2.2rem;  }
-      h3  { font-size: 1.3rem;  }
+      h3  { font-size: 1.4rem;  }
       h4  { font-size: 1.2rem;  }
       p   { font-size: 1rem;  }
   
@@ -152,6 +152,12 @@
         background-size:cover;
       }
 
+      .bg-studio {
+        background-image: url(/images/image-2.png);
+        background-size:cover;
+        background-position: center;
+      }
+
 
       .bg-img-6 {
         background-image:url(/images/image-6.avif);
@@ -184,4 +190,107 @@
         background-size:cover;
       }
 
+     
+  
+      /* clickable boxes */
+      
+      .clickable-box {
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 rgba(0, 0, 0, 0); /* so that we can add a transition */
+        transition: 0.2s all;
+        display: block;
+      }
+      
+      .clickable-box .overlay {
+        min-height: 12rem;
+        padding: 3rem 1rem;
+        background-color: rgba(0,0,10,0.4);
+        color: white;
+      }
+      
+      .clickable-box p {
+        margin-bottom: 0;
+      }
+      
+      .clickable-box:hover {
+        background-color: rgba(0,0,10,0.6);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+        margin-top:-2px;
+      }
+
+
+      .subtle-button { /* this is the arrow button */
+        color: rgb(120,120,125);
+        padding: 0.3rem;
+        padding-left: 0;
+        font-weight: bold;
+      }
+      .subtle-button:hover {
+        color: rgb(60, 60, 60);
+        border-color: rgb(60, 60, 60);
+      }
+      
+      .big-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+
+    /* Contact form  */
+
+
+    input, textarea {
+      border-style: solid;
+      border: 2px solid rgb(200, 200, 205);
+      padding: 0.8em;
+      display: block;
+      width: 100%;
+      font-size: 1rem;
+      vertical-align: top;
+    }
+    
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border: 2px solid #e67e22;
+      /* featured color */
+    }
+    
+    textarea {
+      min-height: 7em;
+    }
+    
+    input[type="submit"] {
+      width: auto;
+      display: block;
+    }
+    
+    form [class*=col-] {
+      padding: 5px;
+    }
+    
+    .email-signup input {
+      width: 30%;
+      display: inline-block;
+      max-width: 250px;
+      margin-top:1rem;
+    }
+    
+    .email-signup .button-solid {
+      padding: 0.8em;
+      border-radius: 0;
+      font-size: 1rem;
+    }
+    form .button {
+      width:100%;
+    }
+      @media(max-width:768px) {
+       .email-signup input {
+         width: 100%;
+         max-width: 100%;
+       }
+     }
+            
+       /* End of Contact form  */
     
