@@ -5,19 +5,38 @@
   }
   
   body {
-    font-family: 'Noto Sans HK', sans-serif;
-    color: rgb(60,60,65);
-    background-color: #f1ede0;
+    font-family: 'Alegreya Sans', sans-serif;
+    color:#585651;
+    background-color:#EBD8C3;
   }
   
   img {
     max-width:100%;
   }
+
+header {
+  background-color:rgb(255, 255, 255);
+  padding: 0.5%;
+}
   
   a {
     text-decoration: none;
     color: inherit;
   }
+
+  div a div {
+    border-radius: 2rem;
+   }
+
+   nav {
+    border: none;
+   }
+
+   nav a {
+    padding: 1% 5%;
+    font-size: 1.3rem;
+   }
+
   
   /* ------------- Utility Classes --------------  */
   
@@ -33,6 +52,7 @@
   
     .capped-width { max-width: 1100px; margin: auto;}
   
+    .tall-5  {  min-height: 5vh;   }
     .tall-10  {  min-height: 10vh;   }
     .tall-20  {  min-height: 20vh;   }
     .tall-30  {  min-height: 30vh;   }
@@ -68,6 +88,7 @@
   
       p, ul {
        margin-bottom: 0.8rem;
+       text-align:left;
       }
   
       /* this makes sure that the last element in any container doesn't have margin-bottom */
@@ -87,6 +108,7 @@
       margin-bottom: 1rem;
       }
   
+
   
       /* Unique Typography Styles */
   
@@ -207,6 +229,7 @@
         padding: 3rem 1rem;
         background-color: rgba(0,0,10,0.4);
         color: white;
+        border-radius: 2rem;
       }
       
       .clickable-box p {
@@ -217,6 +240,7 @@
         background-color: rgba(0,0,10,0.6);
         box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 20px -5px rgba(0, 0, 0, 0.4);
         margin-top:-2px;
+        border-radius: 2rem;
       }
 
 
@@ -294,3 +318,6 @@
             
        /* End of Contact form  */
     
+       header h2 {
+        margin-bottom: 0.1rem;
+       }
